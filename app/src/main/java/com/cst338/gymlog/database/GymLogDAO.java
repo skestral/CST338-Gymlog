@@ -22,18 +22,16 @@
 //         |___/
 //
 
-package com.cst338.gymlog.Database;
+package com.cst338.gymlog.database;
 
 
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
-import androidx.room.Update;
 
-import com.cst338.gymlog.Database.entities.GymLog;
+import com.cst338.gymlog.database.entities.GymLog;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Dao
@@ -42,6 +40,6 @@ public interface GymLogDAO {
     void insert(GymLog gymLog);
 
     @Query("Select * from " + GymLogDatabase.gymLogTable)
-    ArrayList<GymLog> getAllRecords();
+    List<GymLog> getAllRecords();
 
     }
