@@ -1,3 +1,28 @@
+/**
+ * gymlog (the 8 hours of videos to watch assignment)
+ *
+ * @author Savannah Kestral | lynx
+ * @since 7/28/25
+ */
+//
+//         `\.      ,/'
+//          |\\____//|
+//          )/_ `' _\(
+//         ,'/-`__'-\`\
+//        /.  (_><_)  ,\
+//        `  )/`--'\(` '
+//           `      '
+//       _
+//      | |
+//      | |_   _ _ __ __  __
+//      | | | | | '_ \\ \/ /
+//      | | |_| | | | |>  <
+//      |_|\__, |_| |_/_/\_\
+//          __/ |
+//         |___/
+//
+
+
 package com.cst338.gymlog;
 
 import android.os.Bundle;
@@ -18,7 +43,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "DAC_GYMLOG";
+    public static final String TAG = "DAC_GYMLOG";
     ActivityMainBinding binding;
     String mExcercise = "";
     double mWeight = 0.0;
