@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        repository = new GymLogRepository(getApplication());
+        repository = GymLogRepository.getRepository(getApplication());
 
         binding.logDisplayTextView.setMovementMethod(new ScrollingMovementMethod());
 
@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG,"Current display info: " + currentInfo);
         String newDisplay = String.format(Locale.US,"Exercise: %s%nWeight:%.2f%nReps:%d%n=-=-=-=%n%s", mExcercise, mWeight, mReps, currentInfo);
         binding.logDisplayTextView.setText(newDisplay);
+        Log.i(TAG,repository.getAllLogs().toString());
 
 
     }
