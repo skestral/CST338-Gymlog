@@ -46,6 +46,8 @@ import java.util.concurrent.Executors;
 public abstract class GymLogDatabase extends RoomDatabase {
 
     private static final String DATABASE_NAME = "GymLogDatabase";
+    public static final String USER_TABLE = "usertable";
+
     public static final String gymLogTable = "gymLogTable";
 
     private static volatile GymLogDatabase INSTANCE;

@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     String mExercise = "";
     double mWeight = 0.0;
     int mReps = 0;
-
+    int loggedInUserId = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     private void insertGymlogRecord() {
         if (mExercise.isEmpty()) {
